@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+
+select opt in "execute next" "execute multiple" quit; do
+  case $opt in
+    "execute multiple")
+      echo "execute multiple line first case"
+      ;;&
+    "execute next")
+      echo "execute next case line"
+      ;&
+    "dummy")
+      echo "This line will print after execute next case"
+      ;;
+    "dummy2")
+      echo "This line will not print"
+      ;;
+    quit)
+      echo "Bye!"
+      break
+      ;;
+    *)
+      echo "default case will alo cach \"execute multiple\" case"
+      ;;
+  esac
+done
+    
+
