@@ -2,6 +2,7 @@
 
 
 select opt in "execute next" "execute multiple" quit; do
+  echo "Selected option: ${opt} (${REPLY})"
   case $opt in
     "execute multiple")
       echo "execute multiple line first case"
