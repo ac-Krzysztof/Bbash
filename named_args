@@ -20,3 +20,5 @@ done
 
 $deploy && echo "will deploy... deploy = $deploy"
 $uglify && echo "will uglify... uglify = $uglify"
+#staged diff
+#working diff

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+for i; do 
+  echo "$i" # echo each command line argument as 'for i in $@; do echo $i; done' 
+done
