@@ -5,17 +5,17 @@ uglify=false
 
 while (( $# > 1 )); do
   case $1 in
-    --deploy)
+    -d|--deploy)
       deploy="$2"
       ;;
-    --uglify)
+    -u|--uglify)
       uglify="$2"
       ;;
     *)
       break
       ;;
   esac
-  shift 2
+  shift 2 #shift positional argument $# by 2 
 done
 
 $deploy && echo "will deploy... deploy = $deploy"
