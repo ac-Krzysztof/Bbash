@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo "An action?"
+read action
+echo "I'm ${action}ing!"
