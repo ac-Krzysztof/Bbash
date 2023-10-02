@@ -3,3 +3,6 @@
 variable="Master"
 
 printf "Hello, %s!\n" "$variable"
+
+add_string_number="q"
+v=$(expr 3 + $add_string_number)
